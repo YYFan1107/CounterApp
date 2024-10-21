@@ -2,19 +2,20 @@ body {
     background-image: url("Btech-entrance.webp");
     background-size: cover;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     /*to avoid image repetition if you have a background image, this will take the entire viewport */
     height:100vh;
   }
  
   .container{
-    background: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
     opacity: 0.90;
-    max-width: 80%;
+    max-width: 400px;
     margin: auto; /* this helps centering */
     border: 3px solid black;
-    border-radius: 10px;
+    border-radius: 2px solid #333;
   }
  
   h1 {
@@ -30,7 +31,7 @@ body {
  
   button {
     /*border: none; */
-    border: 1px solid #211717;
+    border: 1px solid #d3fa68;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -39,11 +40,38 @@ body {
     margin-bottom: 5px;
     border-radius: 5px;
   }
+
+  button:hover {
+    background-color: #c0392b;
+  }
  
   #increment-btn {
-   background: #2C2891;;
+   background: #5dade2;
+   color: white;
+   padding: 20px;
+   border: none;
+   border-radius: 5px;
+   margin-right: 10px;
+  }
+
+  #increment-btn:hover {
+    background-color: #2980b9;
   }
  
   #save-btn {
-    background: #660063;
+    background: #af7ac5;
+    color: white;
+    padding: 20px;
+    border:none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+  #save-btn:hover {
+    background-color: #884ea0;
+  }
+
+  #count-el, #saved-el {
+    font-size: 32px;
+    margin: 20px;
   }
